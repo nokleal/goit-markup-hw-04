@@ -1,0 +1,186 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --iris: #4D5AE5;
+    --navy-blue: #2E2F42;
+    --slate: #434455;
+    --white: #FFF;
+    --cloud: #F4F4FD;
+
+}
+
+.container {
+    width: 1158px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--slate);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+}
+
+a.header-logo {
+    color: var(--navy-blue);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+}
+
+span {
+    color: var(--iris);
+}
+
+header {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+.nav-display {
+    display: flex;
+    gap: 40px;
+}
+
+.logo-navlink {
+    display: flex;
+    gap: 76px;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--iris);
+}
+
+.contact-info {
+    font-weight: 400;
+    color: var(--slate);
+}
+
+.contact-info:hover, .contact-info:focus {
+    color: var(--iris);
+}
+
+section {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 120px 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px; 
+    letter-spacing: 1.12px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.order-service {
+    background-color: var(--iris);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 16px 32px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.order-service:hover, .order-service:focus{
+    color: var(--iris);
+    background-color: var(--white);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.4px;
+}
+
+.values, .what-we-do, .team-members {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.values, .what-are-we-doing {
+    margin-top: 120px;
+}
+
+.our-team {
+    margin-top: 240px;
+}
+
+.list-images {
+    margin-top: 72px;
+}
+
+.b-margin {
+    margin-bottom: 120px;
+}
+
+.team {
+    width: 264px;
+}
+
+.what-we-do-images {
+    width: 360px;
+}
+
+div {
+    color: var(--slate);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--navy-blue);
+}
+
+footer {
+    background-color: var(--navy-blue);
+    color: var(--cloud);
+    height: 312px;
+}
+
+a.footer-logo {
+    color: var(--cloud);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+}
+
+.footer-content {
+    padding-top: 101.5px;
+    padding-left: 156px;
+    color: var(--cloud);
+}
+
+
