@@ -10,11 +10,12 @@
     --slate: #434455;
     --white: #FFF;
     --cloud: #F4F4FD;
-
+    --light-slate: #8E8F99;
+    --cornflower: #E7E9FC;
 }
 
 .container {
-    width: 1158px;
+    width: 1440px;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
     color: var(--slate);
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: 0.32px;
 }
 
@@ -43,6 +44,8 @@ header {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
+    border-bottom: 1px solid var(--cornflower);
+    
 }
 
 .nav-display {
@@ -75,8 +78,9 @@ header {
     color: var(--iris);
 }
 
-section {
-    background-color: var(--navy-blue);
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/GroupOfPeopleWorking.jpg);
+    background-size: cover;
     color: var(--white);
     padding: 120px 0;
     text-align: center;
@@ -117,24 +121,42 @@ h3 {
     font-weight: 500;
     line-height: 24px; 
     letter-spacing: 0.4px;
+    margin: 6px 0;
 }
 
 .values, .what-we-do, .team-members {
     display: flex;
     gap: 24px;
     justify-content: center;
+    margin-bottom: 120px;
+}
+
+.values-icons {
+    text-align: center;
+    background-color: var(--cloud);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .values, .what-are-we-doing {
     margin-top: 120px;
 }
 
-.our-team {
-    margin-top: 240px;
+.our-team-section {
+    background-color: var(--cloud);
+    padding-top: 120px;
 }
 
 .list-images {
     margin-top: 72px;
+    padding-bottom: 120px;
+}
+
+.figcaption-content {
+    text-align: center;
+    background: var(--white);
+    padding: 32px 0;
+    margin-top: -4px;
 }
 
 .b-margin {
@@ -163,6 +185,56 @@ a {
     color: var(--navy-blue);
 }
 
+.socials-icons-style {
+    background: var(--iris);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-icon {
+    fill: var(--white);
+    width: 16px;
+    height: 16px;
+}
+
+.socials-icons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+}
+
+.customer-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+
+.customer-icon {
+    border: 1px solid var(--light-slate);
+    border-radius: 4%;
+}
+
+.customer-icon:hover, .customer-icon:focus {
+    border-color: var(--iris);
+}
+
+.svg-icon-customers:hover, .svg-icon-customers:focus {
+    fill: var(--iris);
+}
+
+.svg-icon-customers {
+    height: 56px;
+    width: 104px;
+    margin: 16px 32px;
+    fill: var(--light-slate);
+}
+
 footer {
     background-color: var(--navy-blue);
     color: var(--cloud);
@@ -180,7 +252,78 @@ a.footer-logo {
 .footer-content {
     padding-top: 101.5px;
     padding-left: 156px;
+    display: flex;
+    gap: 120px;
+    align-items: baseline;
+}
+
+.webstudio-p {
     color: var(--cloud);
 }
 
+.footer-social-media {
+    color: var(--white);
+}
 
+.socials-icons-footer {
+    gap: 16px;
+    display: flex;
+}
+
+.svg-icon-footer {
+    fill: var(--white);
+    width: 24px;
+    height: 24px;
+}
+
+/* Porfolio Page */
+
+.button-filters {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 96px;
+}
+
+.portfolio-button-filters {
+    background-color: var(--cloud);
+    color: var(--iris);
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 72px;
+}
+
+.portfolio-button-filters:hover,
+.portfolio-button-filters:focus {
+    color: var(--white);
+    background-color: var(--iris);
+}
+
+.portfolio-images {
+    width: 360px;
+    height: 300px;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.portfolio-list-item {
+    border: 1px solid var(--cornflower);
+}
+
+.portfolio-hero-top, .portfolio-hero-middle, .portfolio-hero-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.footer-content {
+    margin-top: 120px;
+}
